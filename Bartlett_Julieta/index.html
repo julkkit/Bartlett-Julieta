@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallerie degli Uffizi - Bauhaus</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet" />
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/eoc5pwg.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid my-1">
+                <a class="navbar-brand" href="#">
+                    <img class="museum-logo" src="icons/logo_museo.svg" alt="logo_museo">
+                </a>
+                <div>
+                    <!-- TICKETS NAVBAR HAMBURGER-->
+                    <a href="#pricing" class="btn btn-red me-2 d-inline d-lg-none">ENTRADAS</a>
+                    <!-- HAMBUERGUER MENU NAVBAR -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mt-3 mt-lg-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">museo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">obras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contacto</a>
+                        </li>
+                    </ul>
+                    <!-- TICKETS NAVBAR-->
+                    <div class="d-lg-block text-end">
+                        <input class="form-control mt-1" type="search" placeholder="Buscar" aria-label="Search" />
+                        <a href="#pricing" class="d-none d-lg-inline-block btn btn-red mt-2">ENTRADAS</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- CAROUSEL -->
+        <div id="carouselHome" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- CAROUSEL ITEM #1 -->
+                <a href="#footer">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <div class="d-flex justify-content-center">
+                            <img src="images/carouselHome1.jpg" class="d-block" alt="carousel_image1">
+                        </div>
+                        <div class="carousel-caption text-start">
+                            <h1 class="display-5">¡Síguenos!</h1>
+                            <p class="lead">¡Suscríbete al newsletter de las Galerías Uffizi y síguenos en nuestras
+                                redes sociales!
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!-- CAROUSEL ITEM #2 -->
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/carouselHome2.jpg" class="d-block" alt="carousel_image2">
+                    </div>
+                    <div class="carousel-caption text-start">
+                        <h1 class="display-5">¡Increíbles obras de arte!</h1>
+                        <p class="lead">Un territorio por explorar, un patrimonio artístico por redescubrir.</p>
+                    </div>
+                </div>
+                <!-- CAROUSEL ITEM #3 -->
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/carouselHome3.jpg" class="d-block" alt="carousel_image3">
+                    </div>
+                    <div class="carousel-caption text-start">
+                        <h1 class="display-5">Característica del museo</h1>
+                        <p class="lead">Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="intro-event">
+            <div class="container-fluid">
+                <div class="row mx-auto text-center text-lg-start">
+                    <div class="col-11 col-lg-10 mx-auto">
+                        <div class="row mb-4 mb-lg-5">
+                            <div class="col-12 col-lg-7">
+                                <h2 class="mb-2">El regreso de <span>Montespertoli</span></h2>
+                                <div class="col-12 col-lg-8">
+                                    <p>El proyecto Terre degli Uffizi hace escala en el Museo di Arte Sacra de la Valdelsa. Adyacente a la iglesia de San Piero in Mercato, el museo se estableció en la década de 1990 para albergar obras de arte de iglesias en el vecindario que ya no se consideran seguras contra robos y daños.La protección de las obras de arte es también el vínculo entre Montespertoli y el panel de la Gallerie degli Uffizi que representa a Cristo Varón de Dolores e Historias de la vida de San Pedro Mártir. Durante la Segunda Guerra Mundial, de 1942 a 1945, gran parte de las colecciones de arte de los museos de Florencia se guardaron por seguridad en el Castillo de Montegufoni en Montespertoli y en otros lugares considerados suficientemente seguros como el Eremo di Camaldoli o el Castillo de Poppi. Los invitados ilustres de Montegufoni incluyeron obras maestras como las dos versiones de la Maestà de Cimabue y Giotto, la Batalla de San Romano de Paolo Uccello y la Primavera de Botticelli.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5 mx-auto">
+                                <img src="images/main_event_lg.png" alt="main_event" class="img-fluid d-none d-lg-block"> <!-- lg -->
+                                <img src="images/main_event.png" alt="main_event" class="img-fluid d-inline d-lg-none my-3"> <!-- xs-md -->
+                            </div>
+                        </div>
+                        <div class="row mx-auto">
+                            <div class="col-12 col-lg-8 margin_class">
+                                <h2 class="mb-2">Una obra única de maestros florentinos</h2>
+                                <div class="col-12 col-lg-9">
+                                    <p>El Museo de Arte Sacro fue fundado en la década de 1990 para albergar
+                                        obras de arte de iglesias que ya no se consideraban a salvo de robos
+                                        y daños a las obras maestras. La protección de las obras de arte es el
+                                        vínculo entre Montespertoli y el panel de la Galleria degli Uffizi que
+                                        representa al Cristo de los Dolores y las Historias de la Vida de San Pedro Mártir.
+                                        Durante la Segunda Guerra Mundial, de 1942 a 1945, la mayoría de las colecciones
+                                        de arte de los museos de Florencia se guardaron en Castel Montegufoni en Montespertoli.
+                                        Los "invitados" notables incluyeron obras maestras como dos versiones de Maesta de
+                                        Cimabue y Giotto, La batalla de San Romano de Paolo Uccello y La primavera de Botticelli.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="card text-start">
+                                    <p class="h3 card-header py-3 card-pricing-title"><strong>Informacion</strong>
+                                    </p>
+                                    <div class="card-body">
+                                        <div class="pb-3"
+                                            style="border-bottom: 2px solid var(--division-section-color);">
+                                            <p class="card-text"><strong>Montespertoli, Museo Diocesano de Arte Sacro de San Pietro in Mercato
+                                                14 mayo - 16 octubre 2022</strong></p>
+                                            <p class="card-text">Jueves a Domingo | 10-13:00/15-18:00</p>
+                                            <p class="card-text">Reducciones: grupos a partir de 15 personas.</p>
+                                        </div>
+                                        <p class="card-text my-4"><strong>Archivos adjuntos</strong></p>
+                                        <div class="d-flex align-items-center justify-content-between py-1"
+                                            style="border-top: 2px solid var(--division-section-color); border-bottom: 2px solid var(--division-section-color);">
+                                            <p class="card-text my-auto">Calendario visita guiada</p>
+                                            <a href="" class="text-dark"><i class="bi bi-filetype-pdf"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTENT -->
+        <section id="content">
+            <div class="container-fluid border-bottom border-2 pb-1 text-lg-center">
+                <div class="row">
+                    <div class="col-11 mx-auto">
+                        <i class="bi bi-table"></i>
+                        <h2 class="d-inline ms-2">Preguntas frecuentes</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row mt-lg-4">
+                    <div
+                        class="col-11 col-lg-10 text-center text-lg-start mx-auto d-sm-block d-lg-flex justify-content-lg-start mt-4">
+                        <p class="py-3 py-lg-0"><strong class="numbering">#1</strong></p>
+                        <div class="ms-lg-4">
+                            <h3 class="mb-1 mb-lg-0">¿Cuál es la mejor forma de disfrutar de Galerías Uffizi?</h3>
+                            <p class="mb-3"><em>TIPS PARA SU VISITA</em></p>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-10 mx-auto">
+                        <p class="col-lg-10 text-center text-lg-start mt-lg-2">
+                            <ul>
+                                <li>Evite las filas: reserve sus entradas para la Galería de los Uffizi</li>
+                                <li>Acceda a una visita guiada para grupos pequeños con acceso sin filas</li>
+                                <li>Acceda a primera hora</li>
+                                </ul>
+                            </p>
+                    </div>
+                    <hr class="col-10 col-lg-7 mx-auto mt-4 mb-3"> <!-- DIVISION LINE -->
+                    <div
+                        class="col-11 col-lg-10 text-center text-lg-end mx-auto d-sm-block d-lg-flex justify-content-lg-end mt-4 align-items-lg-center">
+                        <p class="py-3 py-lg-0 d-lg-none"><strong class="numbering">#2</strong></p>
+                        <div class="me-lg-4">
+                            <h3 class="mb-1 mb-lg-0">¿Cuál es el horario de apertura de Galerías Uffizi?</h3>
+                            <p class="mb-3"><em>TIPS PARA SU VISITA</em></p>
+                        </div>
+                        <p class="py-3 py-lg-0 d-none d-lg-block"><strong class="numbering">#2</strong></p>
+                    </div>
+                    <div class="col-11 col-lg-10 mx-auto d-lg-flex justify-content-lg-end">
+                        <p class="col-lg-10 text-center text-lg-end mt-lg-2">
+                            <strong> Martes a domingo de 8:15 a. M. A 6:50 PM. </strong>
+                            <br> Compre entradas con antelación en Viator. Si reserva con Viator,
+                            puede cancelar <br> hasta 24 horas antes del inicio del tour para obtener un reembolso completo.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ARTWORK -->
+        <section id="artwork">
+            <div class="container-fluid border-bottom border-2 pb-1 text-lg-center">
+                <div class="row">
+                    <div class="col-11 mx-auto">
+                        <i class="bi bi-brush"></i>
+                        <h2 class="d-inline ms-2">Obras</h2>
+                    </div>
+                </div>
+            </div>
+            <!--CARROUSEL-->
+            <div class="container-fluid">
+                <div class="row mx-md-4 mx-lg-4 mt-4">
+                    <div class="col-11 col-md-6 col-lg-3 mb-4 mx-auto">
+                        <div class="card text-center">
+                            <img src="images/carrousel1.jpg" class="card-img-top rounded-0" alt="carrouse1">
+                            <div class="card-body card-artwork1">
+                                <h3 class="card-title mt-1 mb-2">Bendecidos</h3>
+                                <p class="card-text">Bendecidos, 1625 - 1630, Óleo sobre lienzo , Florencia,
+                                    Galería de los Uffizi, 145.6 x 172 cm
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-md-6 col-lg-3 mb-4 mx-auto">
+                        <div class="card text-center">
+                            <img src="images/carrousel2.jpg" class="card-img-top rounded-0" alt="carrousel2">
+                            <div class="card-body card-artwork2">
+                                <h3 class="card-title mt-1 mb-2">Oleada marina </h3>
+                                <p class="card-text">Oleada marina, 1645, Óleo sobre lienzo,
+                                    Florencia, Galería de los Uffizi, Donación Carlo Del Bravo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-md-6 col-lg-3 mb-4 mx-auto">
+                        <div class="card text-center">
+                            <img src="images/carrousel3.jpg" class="card-img-top rounded-0" alt="carrousel3">
+                            <div class="card-body card-artwork3">
+                                <h3 class="card-title mt-1 mb-2">Sujetos a mis manos</h3>
+                                <p class="card-text">Sujetos a mis manos, 1650-1655, Óleo sobre lienzo,
+                                    Florencia, Galería de los Uffizi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-md-6 col-lg-3 mb-4 mx-auto">
+                        <div class="card text-center">
+                            <img src="images/carrousel4.jpg" class="card-img-top rounded-0" alt="carrousel4">
+                            <div class="card-body card-artwork4">
+                                <h3 class="card-title mt-1 mb-2">El castillo </h3>
+                                <p class="card-text">El castillo, 1592-1664, Florencia Agar y el Ángel, Óleo sobre
+                                    lienzo, 127.5 x 170 cm, Enmarcado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- EVENT -->
+        <section id="event">
+            <div class="container-fluid border-bottom border-2 pb-1 text-lg-center">
+                <div class="row">
+                    <div class="col-11 mx-auto">
+                        <i class="bi bi-calendar-event"></i>
+                        <h2 class="d-inline ms-2">Otros eventos</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row mx-lg-4 mt-4">
+                    <div class="col-11 col-lg-4 mb-4 mx-auto">
+                        <div class="card text-center">
+                            <img src="images/event_image1.jpg" class="card-img-top rounded-0" alt="event_image">
+                            <div class="card-body">
+                                <h3 class="card-title mt-3 mb-4">La predela salvada en el Castillo de Montegufoni</h3>
+                                <a href="#" class="btn btn-black d-grid gap-1">Ir al evento</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-4 mb-4 mx-auto">
+                        <div class="card text-center">
+                            <img src="images/event_image2.jpg" class="card-img-top rounded-0" alt="event_image">
+                            <div class="card-body">
+                                <h3 class="card-title mt-3 mb-4">El triptico de San Giovenale de Masaccio</h3>
+                                <a href="#" class="btn btn-black d-grid gap-1">Ir al evento</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-4 mb-4 mx-auto">
+                        <div class="card text-center">
+                            <img src="images/event_image3.jpg" class="card-img-top rounded-0" alt="event_image">
+                            <div class="card-body">
+                                <h3 class="card-title mt-3 mb-4">Una exposición dedicada a la representación de la
+                                    maternidad</h3>
+                                <a href="#" class="btn btn-black d-grid gap-1">Ir al evento</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PROMO -->
+        <section id="promo">
+            <div class="container-fluid border-bottom border-2 pb-1 text-lg-center">
+                <div class="row">
+                    <div class="col-11 mx-auto">
+                        <i class="bi bi-question-square"></i>
+                        <h2 class="d-inline ms-2">Promociones</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row mx-md-4 mx-lg-4 mt-4">
+                    <!-- PROMO 1 -->
+                    <div class="col-11 col-md-6 col-lg-4 mx-auto">
+                        <div class="card border-0">
+                            <div class="card-body card-promo">
+                                <h3 class="card-title pt-1">Entrada gratuita y entradas a precio reducido</h3>
+                                <p class="card-text py-2">Más información sobre categorías de visitantes con derecho a
+                                    entrada gratuita y entradas a precio reducido.</p>
+                                <a href="#" class="btn btn-black px-4">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROMO 2 -->
+                    <div class="col-11 col-md-6 col-lg-4 mx-auto">
+                        <div class="card border-0">
+                            <div class="card-body card-promo">
+                                <h3 class="card-title pt-1">Emergencia COVID-19 | Reglas
+                                    para visitantes</h3>
+                                <p class="card-text py-2">Información sobre normas y medidas anti-Covid19
+                                    a cumplir durante la visita a los museos.</p>
+                                <a href="#" class="btn btn-black px-4">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROMO 3 -->
+                    <div class="col-11 col-md-6 col-lg-4 mx-auto">
+                        <div class="card border-0">
+                            <div class="card-body card-promo">
+                                <h3 class="card-title pt-1">Reserva de boletos</h3>
+                                <p class="card-text py-2">Toda la información que necesitas para reservar
+                                    tus entradas para las Galerías Uffizi.</p>
+                                <a href="#" class="btn btn-black px-4">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROMO 4 -->
+                    <div class="col-11 col-md-6 col-lg-4 mx-auto">
+                        <div class="card border-0">
+                            <div class="card-body card-promo">
+                                <h3 class="card-title pt-1">Información de Accesibilidad
+                                    de las Galerías de los Uffizi</h3>
+                                <p class="card-text py-2">Toda la información sobre el acceso a los museos de
+                                    la Galería Uffizi.</p>
+                                <a href="#" class="btn btn-black px-4">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROMO 5 -->
+                    <div class="col-11 col-md-6 col-lg-4 mx-auto">
+                        <div class="card border-0">
+                            <div class="card-body card-promo">
+                                <h3 class="card-title pt-1">Entrada gratuita al Museo
+                                    Arqueológico Nacional</h3>
+                                <p class="card-text py-2">Cada entrada a los Uffizi también incluye la entrada
+                                    gratuita al Museo Arqueológico Nacional (válida
+                                    durante cinco días a partir de la fecha en que se
+                                    utiliza la entrada para acceder a los Uffizi).</p>
+                                <a href="#" class="btn btn-black px-4">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROMO 6 -->
+                    <div class="col-11 col-md-6 col-lg-4 mx-auto">
+                        <div class="card border-0">
+                            <div class="card-body card-promo">
+                                <h3 class="card-title pt-1">Entrada combinada Palacio Pitti +
+                                    Jardines de Boboli</h3>
+                                <p class="card-text py-2">Visite el Palacio Pitti y los Jardines de Boboli con
+                                    la misma entrada con descuento.</p>
+                                <a href="#" class="btn btn-black px-4">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PRICING -->
+        <section id="pricing">
+            <div class="container-fluid border-bottom border-2 pb-1 text-lg-center">
+                <div class="row">
+                    <div class="col-11 mx-auto">
+                        <i class="bi bi-ticket-detailed"></i>
+                        <h2 class="d-inline ms-2">Entradas</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row mx-lg-4 my-4">
+                    <!-- PRICE #1 -->
+                    <div class="col-11 col-lg-3 mb-4 mx-auto">
+                        <div class="card text-center">
+                            <h3 class="card-header py-3 card-pricing-title">Los Uffizi</h3>
+                            <div class="card-body">
+                                <p class="card-text">El encuentro con el arte de Occidente: <br>
+                                    una maravilla que siempre sorprende.
+                                </p>
+                                <a href="#" class="btn btn-blue d-grid gap-1">Comprar en línea</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PRICE #2 -->
+                    <div class="col-11 col-lg-3 mb-4 mx-auto">
+                        <div class="card text-center">
+                            <h3 class="card-header py-3 card-pricing-title">Corredor Vasari</h3>
+                            <div class="card-body">
+                                <p class="card-text">De los Uffizi a los Jardines de Boboli: <br>
+                                    un camino por encima de la ciudad</p>
+                                <a href="#" class="btn btn-red d-grid gap-1">Comprar en línea</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PRICE #3 -->
+                    <div class="col-11 col-lg-3 mb-4 mx-auto">
+                        <div class="card text-center">
+                            <h3 class="card-header py-3 card-pricing-title">Palacio Pitti</h3>
+                            <div class="card-body">
+                                <p class="card-text">Un Palacio para tres dinastías, <br>
+                                    escenario de la vida cortesana pública y privada</p>
+                                <a href="#" class="btn btn-yellow d-grid gap-1">Comprar en línea</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PRICE #4 -->
+                    <div class="col-11 col-lg-3 mb-4 mx-auto">
+                        <div class="card text-center">
+                            <h3 class="card-header py-3 card-pricing-title">Jardín de Bóboli</h3>
+                            <div class="card-body">
+                                <p class="card-text">Donde la Naturaleza, el Arte, <br> 
+                                    la Ciencia y la Alquimia se encuentran</p>
+                                <a href="#" class="btn btn-black d-grid gap-1">Comprar en línea</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer id="footer" class="py-3">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-lg-3 my-1 text-center">
+                    <a href="#">
+                        <img class="museum-logo" src="icons/logo_museo.svg" alt="logo_museo">
+                    </a>
+                </div>
+                <div class="col-11 col-lg-6 newsletter mx-auto my-4 py-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="h5"><strong>Suscribete a nuestro newsletter</strong></p>
+                            <p>Recibe noticias sobre nuestros próximos eventos</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="form-floating">
+                                <input type="email" class="form-control newsletter-email " id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Ingrese su email</label>
+                            </div>
+                        </div>
+                        <div class="col-4 text-center my-auto d-grid gap-1">
+                            <a href="#" class="btn btn-red">ENVIAR</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="col-10 d-sm-block d-lg-none mx-auto mt-2 pb-1"> <!-- DIVISION LINE -->
+                <div class="col-12 col-lg-3">
+                    <ul class="nav justify-content-center mb-1">
+                        <li><a class="nav-link px-2" target="_blank" href="https://www.twitter.com/"><i
+                                    class="bi bi-twitter"></i></a>
+                        </li>
+                        <li><a class="nav-link px-2" target="_blank" href="https://www.instagram.com/"><i
+                                    class="bi bi-instagram"></i></a></li>
+                        <li><a class="nav-link px-2" target="_blank" href="https://www.facebook.com/"><i
+                                    class="bi bi-facebook"></i></a>
+                        </li>
+                        <li><a class="nav-link px-2" target="_blank" href="https://www.youtube.com/"><i
+                                    class="bi bi-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="col-12 d-none d-lg-block mx-auto mt-2 pb-2"> <!-- DIVISION LINE -->
+                <div class="col-12">
+                    <p class="text-center text-muted">&copy; 2022 Company, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
